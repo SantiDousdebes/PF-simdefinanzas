@@ -1,0 +1,105 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .day-mode {
+    background-color: #f8f8f8;
+    color: #333;
+  }
+  
+  .night-mode {
+    background-color: #222;
+    color: #fff;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  /* Modificamos el color de fondo del contenedor principal en modo noche */
+  .night-mode .container {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input[type="number"],
+  input[type="text"],
+  button {
+    padding: 10px;
+    margin-bottom: 10px;
+    width: calc(100% - 20px);
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button {
+    cursor: pointer;
+    background-color: #2b2a2a;
+    color: #fff;
+    border: none;
+  }
+  
+  button:hover {
+    background-color: #2b2a2a
+  }
+  
+  #result {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* Estilos para la tabla en el modo noche */
+  .night-mode table {
+    background-color: #222;
+    color: #fff;
+  }
+  
+  .night-mode th {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+  }
+  

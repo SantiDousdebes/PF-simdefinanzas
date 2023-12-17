@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Simulador Finanzas Personales</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="day-mode">
+  <div class="container">
+    <h1>Simulador Finanzas Personales</h1>
+    
+    <label for="salaryInput">Sueldo:</label>
+    <input type="number" id="salaryInput"><br><br>
+
+    <label for="expensesInput">Gastos Fijos (separados por coma):</label>
+    <input type="text" id="expensesInput"><br><br>
+
+    <label for="descriptionInput">Descripción de Gastos (separados por coma):</label>
+    <input type="text" id="descriptionInput"><br><br>
+
+    <label for="savingsGoalInput">Meta de Ahorro:</label>
+    <input type="number" id="savingsGoalInput"><br><br>
+
+    <button onclick="calculateSavings()">Calcular</button>
+    <button onclick="toggleMode()">Cambiar Modo</button><br><br>
+
+    <div id="result"></div>
+
+    <h2>Gastos Registrados</h2>
+    <table id="expensesTable" border="1">
+      <tr>
+        <th>Gasto</th>
+        <th>Descripción</th>
+      </tr>
+    </table>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
